@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | XL Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1419;
+        --surface: #1a222c;
+        --text: #e8eef4;
+        --muted: #9aabbc;
+        --accent: #3d8bfd;
+        --line: rgba(232, 238, 244, 0.12);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        font-family: Outfit, system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(ellipse 80% 50% at 20% -10%, rgba(61, 139, 253, 0.25), transparent),
+          radial-gradient(ellipse 60% 40% at 90% 10%, rgba(90, 160, 120, 0.18), transparent),
+          var(--bg);
+        padding: 4rem 1.5rem 3rem;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .brand {
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.5rem;
+      }
+      .lead {
+        color: var(--muted);
+        font-size: 1.05rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 2.5rem;
+        max-width: 36ch;
+      }
+      ul {
+        list-style: none;
+        display: grid;
+        gap: 0.75rem;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.1rem 1.25rem;
+        text-decoration: none;
+        color: var(--text);
+        background: var(--surface);
+        border: 1px solid var(--line);
+        transition: border-color 0.2s ease, transform 0.2s ease;
+      }
+      a:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+      a span.name {
+        font-weight: 500;
+        font-size: 1.05rem;
+      }
+      a span.path {
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="brand">XL Solutions Portfolio</h1>
+      <p class="lead">Selected project demos — open any site below.</p>
+      <ul>
+        <li>
+          <a href="/almanara/">
+            <span class="name">Al Manara Academy</span>
+            <span class="path">/almanara</span>
+          </a>
+        </li>
+        <li>
+          <a href="/lingoleap/">
+            <span class="name">Lingo Leap</span>
+            <span class="path">/lingoleap</span>
+          </a>
+        </li>
+        <li>
+          <a href="/maisonaura/">
+            <span class="name">Maison Aura</span>
+            <span class="path">/maisonaura</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mizan/">
+            <span class="name">Mizan Chambers</span>
+            <span class="path">/mizan</span>
+          </a>
+        </li>
+        <li>
+          <a href="/nasma/">
+            <span class="name">Nasma Journeys</span>
+            <span class="path">/nasma</span>
+          </a>
+        </li>
+        <li>
+          <a href="/techplus/">
+            <span class="name">Tech Plus</span>
+            <span class="path">/techplus</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
